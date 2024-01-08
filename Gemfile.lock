@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
+    ascii_charts (0.9.1)
+    concurrent-ruby (1.2.2)
     domain_name (0.6.20231109)
     ffi (1.16.3)
     ffi-compiler (1.0.1)
@@ -21,12 +23,18 @@ GEM
       rake (~> 13.0)
     public_suffix (5.0.4)
     rake (13.1.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2023.4)
+      tzinfo (>= 1.0.0)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ascii_charts
   http
+  tzinfo-data
 
 BUNDLED WITH
    2.4.6
