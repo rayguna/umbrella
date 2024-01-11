@@ -3,7 +3,7 @@
 See notes in [this lesson](https://learn.firstdraft.com/lessons/104).
 
 Tips:
-- I converted the epoch time obtained from the weather API to coordinated universal time as follows: 
+- I converted the epoch time obtained from the weather API to Coordinated Universal Time (UTC) as follows: 
 
 ```
 #change from epoch to universal time
