@@ -20,7 +20,6 @@ cst_time = cst_timezone.utc_to_local(utc_time)
 ```
 
 - Here is the sample output:
-<br>
 
 <pre>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
