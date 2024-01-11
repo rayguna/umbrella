@@ -12,6 +12,8 @@ pp "Where are you located?"
 
 user_location = gets.chomp.gsub(" ","%20")
 
+puts "\n"
+
 ##user_location = "Chicago"
 
 #pp user_location
@@ -69,19 +71,19 @@ require 'time'
 utc_time = Time.at(current["time"]).utc
 
 #define CST time zone
-cst_timezone = TZInfo::Timezone.get('America/Chicago') # 'America/Chicago' represents the Central Time Zone
+#cst_timezone = TZInfo::Timezone.get('America/Chicago') # 'America/Chicago' represents the Central Time Zone
 
 #convert UTC to CST
-cst_time = cst_timezone.utc_to_local(utc_time)
+#cst_time = cst_timezone.utc_to_local(utc_time)
 
-pp "The current date and time is: #{cst_time}"
+pp "The current date and time is: #{utc_time}"
 
 pp "It is currently #{current["temperature"]} °F"
 
 #add ascii chart: https://github.com/benlund/ascii_charts
 require "ascii_charts"
 
-pp
+puts "\n"
 
 # Some locations around the world do not come with minutely data.
 minutely_hash = weather_json.fetch("minutely", false)
