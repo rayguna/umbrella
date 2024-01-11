@@ -19,7 +19,7 @@ cst_timezone = TZInfo::Timezone.get('America/Chicago') # 'America/Chicago' repre
 cst_time = cst_timezone.utc_to_local(utc_time)
 ```
 
-- Here is the sample output:
+Here is the sample output:
 
 <pre>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
